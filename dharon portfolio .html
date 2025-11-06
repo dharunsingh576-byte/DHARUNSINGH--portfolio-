@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharun Singh - Cybersecurity Portfolio</title>
+
+  <!-- Font Awesome for colorful icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #0a0f1c;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background: radial-gradient(circle at top, #4f46e5, #0f172a);
+      color: white;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 8px solid #38bdf8;
+      box-shadow: 0 0 40px #38bdf8;
+      object-fit: cover;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 25px #38bdf8; }
+      to { box-shadow: 0 0 50px #22d3ee; }
+    }
+
+    header h1 {
+      margin-top: 25px;
+      font-size: 2.8em;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cbd5e1;
+    }
+
+    /* Navigation */
+    nav {
+      background: #101727;
+      text-align: center;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #a5b4fc;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      font-size: 1.2em;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #22d3ee;
+      transform: scale(1.1);
+    }
+
+    section {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #141b2d;
+      border-radius: 15px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #7c3aed;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 4px solid #7c3aed;
+      padding-bottom: 10px;
+    }
+
+    /* Bigger section icons */
+    .icon {
+      font-size: 3em;
+      background: linear-gradient(90deg, #4f46e5, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Project and Certificate Boxes */
+    .project, .certificate {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover, .certificate:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px #4f46e5;
+    }
+
+    .project h3, .certificate h3 {
+      font-size: 1.3em;
+    }
+
+    /* Skills Section */
+    .skills-list span {
+      display: inline-block;
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 12px 18px;
+      margin: 10px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+
+    .skills-list span:hover {
+      background: #2563eb;
+      color: white;
+      transform: scale(1.08);
+    }
+
+    /* Bigger Skill Icons */
+    .skill-icon {
+      font-size: 1.8em;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* Contact Section - Icon Only */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .contact-icons a {
+      color: #38bdf8;
+      font-size: 3em;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.3);
+      color: #7c3aed;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- Replace with your photo -->
+    <img src="your-photo.jpg" alt="Dharun Singh Photo">
+    <h1><i class="fa-solid fa-user-shield icon"></i> Dharun Singh</h1>
+    <p>Cybersecurity Student | Ethical Hacking | Network Defense | Digital Forensics</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+    <a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a>
+    <a href="#certificates"><i class="fa-solid fa-certificate"></i> Certificates</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2><i class="fa-solid fa-diagram-project icon"></i> Projects</h2>
+
+    <div class="project">
+      <h3><i class="fa-solid fa-bug skill-icon" style="color:#f43f5e;"></i> Vulnerability Assessment Lab</h3>
+      <p>Performed network scanning and vulnerability analysis using Nmap and OpenVAS. Created detailed reports with remediation strategies.</p>
+    </div>
+
+    <div class="project">
+      <h3><i class="fa-solid fa-network-wired skill-icon" style="color:#22c55e;"></i> Packet Analysis Dashboard</h3>
+      <p>Developed Python scripts to analyze PCAP files using Scapy and visualize suspicious traffic patterns for faster threat detection.</p>
+    </div>
+
+    <div class="project">
+      <h3><i class="fa-solid fa-flag-checkered skill-icon" style="color:#facc15;"></i> Capture The Flag (CTF) Challenges</h3>
+      <p>Participated in CTF competitions focusing on web exploitation, reverse engineering, and cryptography problems.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2><i class="fa-solid fa-laptop-code icon"></i> Skills</h2>
+    <div class="skills-list">
+      <span><i class="fa-solid fa-lock skill-icon" style="color:#3b82f6;"></i>Ethical Hacking</span>
+      <span><i class="fa-solid fa-shield-halved skill-icon" style="color:#10b981;"></i>Network Security</span>
+      <span><i class="fa-brands fa-linux skill-icon" style="color:#f59e0b;"></i>Linux / Kali</span>
+      <span><i class="fa-brands fa-python skill-icon" style="color:#facc15;"></i>Python Scripting</span>
+      <span><i class="fa-solid fa-magnifying-glass skill-icon" style="color:#ec4899;"></i>Digital Forensics</span>
+      <span><i class="fa-solid fa-wifi skill-icon" style="color:#38bdf8;"></i>Wireshark</span>
+      <span><i class="fa-solid fa-terminal skill-icon" style="color:#a855f7;"></i>Metasploit</span>
+      <span><i class="fa-solid fa-globe skill-icon" style="color:#22d3ee;"></i>Burp Suite</span>
+      <span><i class="fa-solid fa-bug skill-icon" style="color:#ef4444;"></i>Vulnerability Scanning</span>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2><i class="fa-solid fa-certificate icon"></i> Certificates</h2>
+
+    <div class="certificate">
+      <h3><i class="fa-solid fa-graduation-cap skill-icon" style="color:#38bdf8;"></i> Certified Ethical Hacker (CEH) – EC-Council (Planned)</h3>
+      <p>Preparing for CEH certification to enhance penetration testing and ethical hacking skills.</p>
+    </div>
+
+    <div class="certificate">
+      <h3><i class="fa-solid fa-shield skill-icon" style="color:#22c55e;"></i> CompTIA Security+ (In Progress)</h3>
+      <p>Learning network security, risk management, and security architecture principles.</p>
+    </div>
+
+    <div class="certificate">
+      <h3><i class="fa-solid fa-network-wired skill-icon" style="color:#a855f7;"></i> Introduction to Cybersecurity – Cisco</h3>
+      <p>Completed foundational cybersecurity course covering threats, attacks, and protection methods.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section (Icons Only) -->
+  <section id="contact">
+    <h2><i class="fa-solid fa-envelope icon"></i> Contact</h2>
+    <div class="contact-icons">
+      <a href="mailto:your.email@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/yourusername" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" title="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dharun Singh | Cybersecurity Portfolio | <i class="fa-solid fa-user-shield"></i>
+  </footer>
+</body>
+</html>
